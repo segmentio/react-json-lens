@@ -1,0 +1,73 @@
+{
+  "name": "react-json-lens",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel demo/index.html --dist-dir=/tmp/react-json-lens",
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier-eslint '**/*.ts' '**/*.tsx' --write"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts-esm",
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(map-obj)/)"
+    ],
+    "moduleNameMapper": {
+      ".*\\.svg$": "empty-string",
+      "~/src/(.*)": "<rootDir>/src/$1",
+      "~/resources/(.*)": "<rootDir>/resources/$1"
+    }
+  },
+  "dependencies": {
+    "is-object": "^1.0.2",
+    "map-obj": "^5.0.1",
+    "shader": "^1.0.0",
+    "type-fest": "^2.12.2",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/is-object": "^1.0.2",
+    "@types/jest": "^27.5.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.15.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.0",
+    "parcel": "^2.8.3",
+    "prettier": "^2.6.2",
+    "prettier-eslint-cli": "^6.0.1",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^16.8.0",
+    "ts-jest": "^28.0.2",
+    "styled-components": "^5.3.5"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "styled-components": "^5.3.5"
+  }
+}

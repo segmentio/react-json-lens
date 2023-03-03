@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": true,
+    "baseUrl": ".",
+    "sourceMap": true,
+    "declarationMap": true,
+    "strictNullChecks": true,
+    "typeRoots": ["./typings", "../../node_modules/@types", "node_modules/@types"]
+  }
+}

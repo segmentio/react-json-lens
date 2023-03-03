@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSON Compare performs comparison of an array: array_diff_result 1`] = `
+Object {
+  "decorations": Array [
+    "[",
+    "]",
+  ],
+  "items": Array [
+    Object {
+      "diffType": "M",
+      "index": 0,
+      "oldValue": 829502,
+      "value": 174211,
+    },
+    Object {
+      "diffType": "D",
+      "oldValue": 889252,
+      "previousIndex": 1,
+    },
+    Object {
+      "diffType": "R",
+      "index": 1,
+      "previousIndex": 4,
+      "value": Object {
+        "thisObjectSwitchesPositions": true,
+      },
+    },
+    Object {
+      "diffType": "M",
+      "index": 2,
+      "oldValue": "armenia",
+      "value": "japan",
+    },
+    Object {
+      "diffType": "A",
+      "index": 3,
+      "value": true,
+    },
+    Object {
+      "diffType": "A",
+      "index": 4,
+      "value": "this value has been added",
+    },
+    Object {
+      "diffType": "D",
+      "oldValue": false,
+      "previousIndex": 5,
+    },
+    Object {
+      "diffType": "R",
+      "index": 5,
+      "previousIndex": 3,
+      "value": "this value switches positions",
+    },
+  ],
+  "type": "array",
+}
+`;
+
+exports[`JSON Compare performs comparison of an object: object_diff_result 1`] = `
+Object {
+  "decorations": Array [
+    "{",
+    "}",
+  ],
+  "items": Array [
+    Object {
+      "diffType": "M",
+      "key": "thisKeyWillBeModified",
+      "oldValue": Object {
+        "age": 42,
+        "name": "tuco salamanca",
+      },
+      "value": Object {
+        "age": 39,
+        "name": "lalo salamanca",
+      },
+    },
+    Object {
+      "diffType": "A",
+      "key": "aNewlyAddedKey",
+      "value": Object {
+        "age": 35,
+        "name": "saul goodman",
+      },
+    },
+    Object {
+      "diffType": "D",
+      "key": "thisKeyWillBeRemoved",
+      "oldValue": Object {
+        "age": 21,
+        "name": "sussy baca",
+      },
+    },
+  ],
+  "type": "object",
+}
+`;
+
+exports[`JSON Compare performs comparison of basic primitives: primitives_diff_result 1`] = `
+Object {
+  "decorations": Array [
+    "{",
+    "}",
+  ],
+  "items": Array [
+    Object {
+      "diffType": "M",
+      "key": "aString",
+      "oldValue": "jacob",
+      "value": "ryan",
+    },
+    Object {
+      "diffType": "M",
+      "key": "aLongString",
+      "oldValue": "brown fox jumped over the fence, she fell but she is alive and well, and no regrets",
+      "value": "brown fox jumped over the fence, there are regrets",
+    },
+    Object {
+      "diffType": "M",
+      "key": "aNumericValue",
+      "oldValue": 7329821,
+      "value": 121,
+    },
+    Object {
+      "diffType": "M",
+      "key": "aBoolean",
+      "oldValue": true,
+      "value": false,
+    },
+  ],
+  "type": "object",
+}
+`;
+
+exports[`JSON Compare performs inner comparison of an array: array_inner_array_diff_result 1`] = `
+Object {
+  "decorations": Array [
+    "[",
+    "]",
+  ],
+  "items": Array [
+    Object {
+      "diffType": "D",
+      "oldValue": 1,
+      "previousIndex": 0,
+    },
+    Object {
+      "diffType": "R",
+      "index": 0,
+      "previousIndex": 2,
+      "value": 3,
+    },
+    Object {
+      "diffType": "M",
+      "index": 1,
+      "oldValue": 2,
+      "value": 4,
+    },
+    Object {
+      "diffType": "A",
+      "index": 2,
+      "value": 5,
+    },
+  ],
+  "type": "array",
+}
+`;
+
+exports[`JSON Compare performs inner comparison of an array: array_inner_object_diff_result 1`] = `
+Object {
+  "decorations": Array [
+    "{",
+    "}",
+  ],
+  "items": Array [
+    Object {
+      "diffType": "M",
+      "key": "productId",
+      "oldValue": 48925,
+      "value": 73211,
+    },
+    Object {
+      "key": "description",
+      "value": "a product",
+    },
+    Object {
+      "diffType": "A",
+      "key": "catalogId",
+      "value": 810985,
+    },
+  ],
+  "type": "object",
+}
+`;
