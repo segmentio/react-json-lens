@@ -2,6 +2,9 @@
 
 The beautiful JSON viewer for React.
 
+![image](https://user-images.githubusercontent.com/11316020/224454284-eb24fc6e-cb1c-478e-b437-1c247a1798a1.png)
+
+
 ## Usage
 
 First install `react-json-lens` using your favourite package manager:
