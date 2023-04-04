@@ -1,3 +1,5 @@
+/**Copyright (c) 2023 Twilio */
+
 import { JsonValue } from 'type-fest'
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 
@@ -20,6 +22,9 @@ import {
   HighlightDecoration
 } from './style'
 
+
+export * from './types'
+export { compare } from './utils'
 
 export type ToggleObjectButtonProps = {
   collapsed: boolean
