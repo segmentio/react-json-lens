@@ -4,7 +4,6 @@ The beautiful JSON viewer for React.
 
 ![image](https://user-images.githubusercontent.com/11316020/224454284-eb24fc6e-cb1c-478e-b437-1c247a1798a1.png)
 
-
 ## Usage
 
 First install `react-json-lens` using your favourite package manager:
@@ -26,6 +25,8 @@ export const App = ({ data }) => (
   </Container>
 )
 ```
+
+To use the diffing feature simply pass an `oldValue` prop along with `value`.
 
 ## License
 
@@ -50,4 +51,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-

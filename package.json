@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "format": "prettier-eslint '**/*.ts' '**/*.tsx' --write"
   },
+  "repository": "github:segmentio/react-json-lens",
   "jest": {
     "preset": "ts-jest/presets/js-with-ts-esm",
     "globals": {
